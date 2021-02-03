@@ -1,0 +1,15 @@
+.main {
+  display: grid;
+  width: 78%;
+  margin: 0 auto;
+  grid-template-columns: 30% 66%;
+  justify-items: stretch;
+  column-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    display: block;
+  }
+}
