@@ -2,14 +2,9 @@ import React from 'react';
 
 import './main.css';
 
-const Main = ({left, right}) => (
+const Main = (props) => (
   <main className="main">
-    <div className="main__left">
-      {left}
-    </div>
-    <div className="main__right">
-      {right}
-    </div>
+    {props.children}
   </main>
 );
 

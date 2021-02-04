@@ -1,5 +1,7 @@
 .ticket-list {
-  margin: 0;
+  height: calc(100vh - 340px);
+  overflow-y: scroll;
+  margin: 0 0 10px 0;
   padding: 0;
   list-style: none;
 }

@@ -11,7 +11,7 @@ const Ticket = ({
   return (
   <div className="ticket">
     <div className="ticket__header">
-      <span>{price.toLocaleString()} P</span>
+      <span>{price.toLocaleString('ru-RU')} P</span>
       <img src={`http://pics.avs.io/99/36/${carrier}.png`} alt="airplane company logo"/>
     </div>
 
