@@ -46,15 +46,6 @@ const minToMilliseconds = (minutes) => {
   return minutes * MINUTES_IN_HOUR * MILLISECONDS_IN_MINUTE;
 }
 
-const getData = () => {
-  return fetch('https://front-test.beta.aviasales.ru/search')
-        .then((data) => data.json())
-        .then(({searchId}) => {
-          return fetch(`https://front-test.beta.aviasales.ru/tickets?searchId=${searchId}`)
-              .then((res) => res.json())
-      });
-};
-
 const sortTickets = (sortType, tickets) => {
   switch (sortType) {
     case SortType.CHEAP:
@@ -115,5 +106,5 @@ const filterTickets = (filters, tickets) => {
   return result;
 }
 
-export {formatDuration, formatDateToHoursAndMinutes, getData, sortTickets, filterTickets};
+export {formatDuration, formatDateToHoursAndMinutes, sortTickets, filterTickets};
 
